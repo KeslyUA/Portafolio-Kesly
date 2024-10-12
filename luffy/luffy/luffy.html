@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luffy One Piece con Corazón - CSS Art</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .luffy {
+            position: relative;
+            width: 150px;
+            height: 250px;
+        }
+        /* Sombrero */
+        .hat {
+            position: absolute;
+            top: 0;
+            left: 20px;
+            width: 110px;
+            height: 50px;
+            background-color: #f4c542;
+            border-radius: 50px 50px 0 0;
+            z-index: 1;
+        }
+        .hat-band {
+            position: absolute;
+            top: 35px;
+            left: 20px;
+            width: 110px;
+            height: 10px;
+            background-color: #e74c3c;
+            z-index: 2;
+        }
+        /* Cabeza */
+        .head {
+            position: absolute;
+            top: 40px;
+            left: 35px;
+            width: 80px;
+            height: 80px;
+            background-color: #f9ccbb;
+            border-radius: 50%;
+        }
+        /* Cuerpo */
+        .body {
+            position: absolute;
+            top: 120px;
+            left: 50px;
+            width: 50px;
+            height: 80px;
+            background-color: #e74c3c;
+        }
+        /* Piernas */
+        .leg {
+            position: absolute;
+            top: 200px;
+            left: 50px;
+            width: 15px;
+            height: 50px;
+            background-color: #34495e;
+        }
+        .leg:nth-child(2) {
+            left: 85px;
+        }
+        /* Brazos */
+        .arm {
+            position: absolute;
+            top: 140px;
+            width: 15px;
+            height: 50px;
+            background-color: #f9ccbb;
+        }
+        .arm.left {
+            left: 20px;
+            transform: rotate(30deg);
+        }
+        .arm.right {
+            left: 115px;
+            transform: rotate(-30deg);
+        }
+        /* Corazón */
+        .heart {
+            position: absolute;
+            top: 70px;
+            left: 95px;
+            width: 50px;
+            height: 50px;
+            background-color: red;
+            transform: rotate(-45deg);
+        }
+        .heart:before,
+        .heart:after {
+            content: "";
+            position: absolute;
+            width: 50px;
+            height: 50px; 
+            background-color: red;
+            border-radius: 50%;
+        }
+        .heart:before {
+            top: -25px;
+            left: 0;
+        }
+        .heart:after {
+            left: 25px;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="luffy">
+        <div class="hat"></div>
+        <div class="hat-band"></div>
+        <div class="head"></div>
+        <div class="body"></div>
+        <div class="arm left"></div>
+        <div class="arm right"></div>
+        <div class="leg"></div>
+        <div class="leg"></div>
+        <div class="heart"></div>
+    </div>
+</body>
+</html>
