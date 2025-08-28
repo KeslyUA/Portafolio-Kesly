@@ -67,34 +67,63 @@
     </div>
     
    </section>
+   
    <section id="mis habilidades" class="habilidades">
-    <h2>Mis Habilidades</h2>
-    <div class="contenedor">
-     <div class="hb">
-        <img class="c" src="img/Csharp_Logo.png" alt="c#">
+    <div class="encabezado">
+        <h2>Mis Habilidades</h2>
     </div>
-    <div class="hb">
-        <img class="angular" src="img/Angular_full_color_logo.svg.png" alt="">
+    <div class="carrusel">
+            
+        <button class="flecha izq">&#10094;</button>
+        <div class="contenedor">
+        <div class="hb">
+            <img class="c" src="img/Csharp_Logo.png" alt="">
+        </div>
+        <div class="hb">
+            <img class="angular" src="img/Angular_full_color_logo.svg.png" alt="">
+        </div>
+        <div class="hb">
+            <img class="html" src="img/HTML5_logo_and_wordmark.svg.png" alt="">
+        </div>
+        <div class="hb">
+            <img class="js" src="img/js.png" alt="">
+        </div>
+        <div class="hb">
+            <img class="reac" src="img/reac.png" alt="">
+        </div>
+        <div class="hb">
+            <img class="python" src="img/Python-logo-notext.svg.png" alt="">
+        </div>
+        <div class="hb">
+            <img class="sql" src="img/sqll.png" alt="">
+        </div>
+        <div class="hb">
+            <img class="boostrap" src="img/boostrap.png" alt="">
+        </div>
+        <div class="hb">
+            <img class="Nest" src="img/Nest.png" alt="">
+        </div>
+        <div class="hb">
+            <img class="Docker" src="img/dock.png" alt="">
+        </div>
+        </div>
+        <button class="flecha der">&#10095;</button>
     </div>
-    <div class="hb">
-        <img class="html" src="img/HTML5_logo_and_wordmark.svg.png" alt="">
-    </div>
-    <div class="hb">
-        <img class="js" src="img/js.png" alt="">
-    </div>
-    <div class="hb">
-        <img class="reac" src="img/reac.png" alt="">
-    </div>
-    <div class="hb">
-        <img class="python" src="img/Python-logo-notext.svg.png" alt="">
-    </div>
-    <div class="hb">
-        <img class="sql" src="img/sqll.png" alt="">
-    </div>
-    <div class="hb">
-        <img class="boostrap" src="img/boostrap.png" alt="">
-    </div>
-    </div>
+    
+    <script>
+        const contenedor = document.querySelector(".contenedor");
+        const flechaIzq = document.querySelector(".izq");
+        const flechaDer = document.querySelector(".der");
+
+        flechaIzq.addEventListener("click", () => {
+            contenedor.scrollBy({ left: -200, behavior: "smooth" });
+        });
+
+        flechaDer.addEventListener("click", () => {
+            contenedor.scrollBy({ left: 200, behavior: "smooth" });
+        });
+    </script>
+
    
 
    </section>
@@ -105,6 +134,7 @@
         <a href="https://github.com/KeslyUA/FrondProyecto" class="clinica"><p>Reporte de clínica</p></a>
         <a href="https://github.com/KeslyUA/BackEnd.git" class="apiClinica"><p>Api clínico</p></a>
         <a href="https://github.com/KeslyUA/Api-veterinaria.git" class="Vet"><p>API Veterinaria</p></a>
+        <a href="https://github.com/KeslyUA/proyecto1.git" class="min"><p>Sistema de inventario</p></a>
         
     </div>
    </section>
