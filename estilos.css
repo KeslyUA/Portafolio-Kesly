@@ -182,6 +182,13 @@ html{
     background: linear-gradient(180deg, rgb(0, 0, 0), rgb(57, 56, 57));
     height: 100vh;
     color: rgb(167, 131, 224);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    margin: auto;
+
    
 }
 .habilidades h2{
@@ -193,61 +200,42 @@ html{
 }
 
  .contenedor{
-    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; 
-    margin-left:5%;
-    height: 60%;
-    width: 90%;
-    color: #06161f;
+    overflow-x: auto;
+  scroll-behavior: smooth;
+  display: flex;
+  gap: 30px;
+  padding: 10px;
+  scrollbar-width: none;
         
 }
-.contenedor .hb{
-    border-radius: 15%;
-    height: 45%;
-    width:20%;
-    
-    margin: 2%;
-    transition: transform 0.5s ease;
-    font-size: 80px;
-    text-align: center;
-    align-items: center;
-    font-size: 24px;
-    
+
+.contenedor::-webkit-scrollbar {
+  display: none; 
 }
-.contenedor .hb .c{
-  width: 190px;
-  height: 190px; 
+.hb img {
+  width: 250px;
+  height: 250px;
+  object-fit: contain;
+  transition: transform 0.3s;
 }
-.contenedor .hb .angular{
-  width: 190px;
-  height: 190px;
+.hb img:hover {
+  transform: scale(1.1);
 }
-.contenedor .hb .html{
-  width: 190px;
-  height: 190px; 
+.flecha {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 3rem;
+  cursor: pointer;
+  padding: 10px;
+  position: absolute;
+  z-index: 10;
 }
-.contenedor .hb .js{
-  width: 190px;
-  height: 190px;
+.izq {
+  left: 0;
 }
-.contenedor .hb .reac{
-  width: 280px;
-  height: 180px;
-}
-.contenedor .hb .python{
-  width: 190px;
-  height: 190px;
-}
-.contenedor .hb .sql{
-  width: 200px;
-  height: 190px;
-}
-.contenedor .hb .boostrap{
-  width: 190px;
-  height: 180px;
+.der {
+  right: 0;
 }
 .contenedor .hb .php{
   width: 190px;
@@ -291,9 +279,20 @@ html{
 .proyecto{
   display: flex;
   gap:200px;
+  height: 70vh;
   justify-content: center; 
   align-items: center;
   flex-wrap: wrap;
+}
+.proyecto .min{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  background-image:url(img/min.png);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  color: #ffffffcc;
+  text-align: center;
+  text-decoration: none;
 }
 .proyecto .clinica{
   height: 200px;
@@ -473,6 +472,17 @@ position: relative;
       height: auto;
     }
   }
+  .encabezado{
+  position: relative;
+  height: 10vw;
+  width: 100vh;
+}
+.carrusel{
+  height: 70vh;
+  width: 100%;
+  display: flex;
+  place-items: center;
+}
   
   @media (max-width: 480px) {
     .contenedor-header header .logo a {
