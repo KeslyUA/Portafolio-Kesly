@@ -249,6 +249,10 @@ html{
   width: 190px;
   height: 180px;
 }
+.contenedor .hb .php{
+  width: 190px;
+  height: 180px;
+}
 .contenedor .hb .i{
     justify-content: center;
     align-items: center;
@@ -283,6 +287,43 @@ html{
   text-align: center;
   color:rgb(0, 0, 0);
   background-image:url(img/proy.png);
+}
+.proyecto{
+  display: flex;
+  gap:200px;
+  justify-content: center; 
+  align-items: center;
+  flex-wrap: wrap;
+}
+.proyecto .clinica{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  background-image:url(img/proy.png);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  color: #000000cc;
+  text-align: center;
+  text-decoration: none;
+}
+.proyecto .Vet{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  background-image:url(img/vetapi.png);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+  color: #ffffffcc;
+  text-align: center;
+  text-decoration: none;
+}
+.proyecto .Foro{
+  height: 200px;
+  width: 200px;
+  border-radius: 20px;
+  background-image:url(img/foro.png);
+  text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.8);
+  color: #000000cc;
+  text-align: center;
+  text-decoration: none;
 }
   
 .contacto{
